@@ -1,12 +1,8 @@
 .post{
 	h2.title, .entry-content{
-		margin-left: 200px;
-		@media screen and (max-width: 800px){
-			margin-left: 0;
-		}
 	}
 	.meta{
-		position: absolute;
+		//position: absolute;
 		top: 85px;
 		line-height: 2;
 		font-size: 0.9em;

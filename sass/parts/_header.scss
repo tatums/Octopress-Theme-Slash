@@ -1,9 +1,20 @@
 $header-height: 30px;
 
+
+.article-heading{
+  overflow:auto;
+  .title{
+    float:left;
+  }
+  .meta{
+    float:right;
+  }
+}
+
 #header{
 	height: $header-height;
 	padding: 30px 0;
-	border-bottom: 1px solid $color-gray04;
+	//border-bottom: 1px solid $color-gray04;
 	line-height: $header-height;
 	@media screen and (max-width: 1040px){
 		height: auto;
@@ -11,19 +22,26 @@ $header-height: 30px;
 		padding-bottom: 10px;
 	}
 	a{
-		color: $color-gray01;
+    //color: $color-gray01;
 		@include transition(color 0.3s);
 		&:hover{
-			color: $color-main;
+      color: #fff;
+		//color: $color-main;
 		}
 	}
 	h1{
+
 		float: left;
 		font-weight: 300;
 		font-size: 30px;
 		@media screen and (max-width: 1040px){
 			float: none;
 		}
+    a{
+      color: #fff;
+      background: linear-gradient(red,red) left repeat;
+      padding: 0.15em;
+    }
 	}
 }
 #main-nav{
